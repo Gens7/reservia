@@ -1,0 +1,321 @@
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}
+
+body {
+    margin: auto;
+}
+
+#bloc_page {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 5000px;
+    font-family: 'ralewayregular', Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+}
+
+nav {
+    position: absolute;
+    display : flex;
+    font-size: 15px;
+    font-weight: bold;
+    top: 30px;
+    padding-right: 0px;
+    right: 0px;
+    height: 40px;
+    width: 350px;
+    text-decoration: none;
+}
+
+.el1 {
+    flex: 1 1 auto;
+}
+
+.el2 {
+    flex: 1 1 auto;
+}
+
+.el3 {
+    flex: 1 1 auto;
+}
+
+.el1 a {
+    color: #80a8e2;
+}
+
+.el2 a {
+    color: #6d686893;
+}
+
+.el3 a {
+    color: #0065FC;
+}
+
+.titre {
+    position: absolute;
+    top: 80px;
+}
+
+.p {
+    position: absolute;
+    top: 110px;
+}
+
+.recherche {
+    position: absolute;
+    display: flex;
+    top: 170px;
+    height: 50px;
+    width: 400px;
+}
+
+.map {
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex: 1 1 20px;
+    background-color: #F2F2F2;
+}
+
+.champ {
+    height: 44px;
+    flex: 1 1 150px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+.bouton {
+    flex: 1 1 100px;
+    background-color:  #0400fc;
+    height: 48px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #0400fc;
+    text-decoration: none;
+}
+
+.bouton h2 {
+    color: white;
+    text-align: center;
+}
+
+#filtres {
+    position: absolute;
+    display: flex;
+    top: 261px;
+    height: 54px;
+    width: 880px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2 {
+    flex: 1 1 auto;
+    margin-right: 20px;
+}
+
+.economique {
+    flex: 1 1 auto;
+    border-radius: 30px;
+    border: 3px solid #F2F2F2;
+    border-style: solid solid solid hidden;
+    border-top-left-radius: 35%;
+    display: flex;
+    margin-right: 20px;
+    height: 48px;
+} 
+
+.money {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8caddd;
+    flex: 1 1 auto;
+    line-height: 50px;
+    vertical-align: middle;
+}
+ 
+.eco {
+    flex: 1 1 auto;
+    padding-left: 10px;
+}
+
+.eco a {
+    color: black;
+}
+
+.eco a:hover {
+    background-color: #0400fc;
+    color: #F2F2F2;
+    font-size: 30px;
+}
+
+.familial {
+    flex: 1 1 auto;
+    border-radius: 30px;
+    border: 3px solid #F2F2F2;
+    border-style: solid solid solid hidden;
+    border-top-left-radius: 35%;
+    display: flex;
+    margin-right: 20px;
+    height: 48px;
+} 
+
+.child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8caddd;
+    flex: 1 1 auto;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.fam {
+    flex: 1 1 auto;
+    padding-left: 10px;
+}
+
+.fam a {
+    color: black;
+}
+
+.fam a:hover {
+    background-color: #0400fc;
+    color: #F2F2F2;
+    font-size: 30px;
+}
+
+.romantique {
+    flex: 1 1 auto;
+    border-radius: 30px;
+    border: 3px solid #F2F2F2;
+    border-style: solid solid solid hidden;
+    border-top-left-radius: 35%;
+    display: flex;
+    margin-right: 20px;
+    height: 48px;
+} 
+
+.heart {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8caddd;
+    flex: 1 1 auto;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.rom {
+    flex: 1 1 auto;
+    padding-left: 10px;
+}
+
+.rom a {
+    color: black;
+}
+
+.rom a:hover {
+    background-color: #0400fc;
+    color: #F2F2F2;
+    font-size: 30px;
+}
+
+.animaux {
+    flex: 1 1 auto;
+    border-radius: 30px;
+    border: 3px solid #F2F2F2;
+    border-style: solid solid solid hidden;
+    border-top-left-radius: 35%;
+    display: flex;
+    margin-right: 20px;
+    height: 48px;
+} 
+
+.dog {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8caddd;
+    flex: 1 1 auto;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.ani {
+    flex: 1 1 auto;
+    padding-left: 10px;
+}
+
+.ani a {
+    color: black;
+}
+
+.ani a:hover {
+    background-color: #0400fc;
+    color: #F2F2F2;
+    font-size: 30px;
+}
+
+.info {
+    display: flex;
+    top: 360px;
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;   
+}
+
+.info i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #F2F2F2;
+    flex: 1 1 auto;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #0400fc;
+}
+
+.info p {
+    text-align: center;
+    padding-left: 6px;
+    flex: 1 1 auto;
+    margin: auto;
+}
+
