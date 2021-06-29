@@ -16,7 +16,7 @@ body {
 #bloc_page {
     margin-left: 20%;
     margin-right: 20%;
-    height: 5000px;
+    height: 1420px;
     font-family: 'ralewayregular', Helvetica, sans-serif;
 }
 
@@ -59,15 +59,7 @@ nav {
     text-decoration: none;
 }
 
-.el1 {
-    flex: 1 1 auto;
-}
-
-.el2 {
-    flex: 1 1 auto;
-}
-
-.el3 {
+.el1, .el2, .el3 {
     flex: 1 1 auto;
 }
 
@@ -586,4 +578,22 @@ aside .etoiles {
     padding-bottom: 20px;
 }
 
+footer {
+   background-color: #F2F2F2;
+   font-family: 'ralewayregular', Helvetica, sans-serif;
+   height: 200px;
+   margin-right: 17%;
+   margin-left: 17%;
+   display:flex;
+}
 
+footer h2 {
+    padding-bottom: 10px;
+}
+
+.propos, .heberg, .assistance {
+    flex: 1 1 auto;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top:30px;  
+}
