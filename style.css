@@ -36,7 +36,7 @@ p {
 
 header {
     width: 100%;
-    height: 500px;
+    height: 440px;
     position: relative;
     padding-left: 10px;
 }
@@ -318,4 +318,272 @@ h2 {
     flex: 1 1 auto;
     margin: auto;
 }
+
+section {
+    top: 0px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+}
+
+articles {
+    position: relative;
+    top: 0px;
+    height: 440px;
+    background-color: #F2F2F2;
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bloch {
+    position: absolute;
+    width: 568px;
+    top: 90px;
+    height: 304px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heb1, .heb2, .heb3, .heb4, .heb5, .heb6 {
+    height: 140px;
+    flex: 1 1 170px;
+    background-color: white;
+    border-radius: 20px;
+    top: 100px;
+    align-content: baseline;
+    border: 3px solid white;
+    display: flex;
+    box-shadow: 0px 2px 2px 1px rgb(187, 184, 184);
+}
+
+.heb1, .heb2, .heb4, .heb5 {
+    margin-right: 15px;
+}
+
+.heb4, .heb5, .heb6 {
+    margin-top: 15px;
+}
+
+.heb1 img, .heb2 img, .heb3 img, .heb4 img, .heb5 img, .heb6 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.heb1 h2, .heb2 h2, .heb3 h2 {
+    position: absolute;
+    top: 80px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.heb1 p, .heb2 p, .heb3 p {
+    position: absolute;
+    top: 98px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.heb1 .etoiles, .heb2 .etoiles, .heb3 .etoiles {
+    font-size: 10px;
+    position: absolute;
+    top: 130px;
+    padding-left: 7px;
+}
+
+.heb4 h2, .heb5 h2, .heb6 h2 {
+    position: absolute;
+    top: 242px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.heb4 p, .heb5 p, .heb6 p {
+    position: absolute;
+    top: 258px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.heb4 .etoiles, .heb5 .etoiles, .heb6 .etoiles {
+    font-size: 10px;
+    position: absolute;
+    top: 290px;
+    padding-left: 7px;
+}
+
+articles h2 {
+    position: absolute;
+    top: 416px;
+}
+
+
+aside {
+    top: 0px;
+    height: 440px;
+    width: 30%;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    display: flex;
+    border-radius: 20px;
+    padding: 20px; 
+    position: relative;
+    flex-wrap: wrap;
+}
+
+aside h1 {
+    flex: 10 1 auto;
+    margin-bottom: 30px;
+}
+
+aside i {
+    flex: 1 1 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+aside h2 {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 10px;
+    left: 110px;
+}
+
+aside p {
+    font-size: 12px;
+    padding-left: 10px;
+    left: 110px; 
+}
+
+aside .etoiles {
+    font-size: 10px;
+    padding-left: 10px;
+    left: 120px;
+}
+
+.pop1, .pop2, .pop3 {
+    top: 90px;
+    height: 105px;
+    flex: 1 1 250px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-content: baseline;
+    border: 3px solid white;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 2px 1px rgb(187, 184, 184);
+}
+
+.pop2, .pop3 {
+    margin-top: 15px;
+}
+
+.pop1 img, .pop2 img, .pop3 img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pop1 h2 {
+    top: 90px;
+    position: absolute;
+}
+
+.pop1 p {
+    top: 130px;
+    position: absolute;
+}
+
+.pop1 .etoiles {
+    position: absolute;
+    top: 160px;
+}
+
+.pop2 h2 {
+    top: 216px;
+    position: absolute;
+}
+
+.pop2 p {
+    top: 256px;
+    position: absolute;
+}
+
+.pop2 .etoiles {
+    position: absolute;
+    top: 286px;
+}
+
+.pop3 h2 {
+    top: 344px;
+    position: absolute;
+}
+
+.pop3 p {
+    top: 384px;
+    position: absolute;
+}
+
+.pop3 .etoiles {
+    position: absolute;
+    top: 414px;
+}
+
+#activites {
+    position: relative;
+    top: 40px;
+    height: 390px;
+    width: 100%;
+}
+
+.blocactiv {
+    position: absolute;
+    top: 40px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+
+.blocactiv img {
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.blocactiv h2 {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.activ1, .activ2, .activ3, .activ4 {
+    flex: 1 1 auto;
+    align-content: baseline;
+    flex-wrap: wrap;
+}
+
+.activ1, .activ3 {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 1px rgb(187, 184, 184);
+}
+
+.activ1, .activ2, .activ3 {
+    margin-right: 20px;
+}
+
+.blocfort, .blociles, .blocathe, .bloclong {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 1px rgb(187, 184, 184); 
+}
+
+.blociles, .bloclong {
+    margin-top: 20px;
+}
+
+.blociles h2, .blocfort h2, .bloclong h2, .blocathe h2 {
+    padding-bottom: 20px;
+}
+
 
