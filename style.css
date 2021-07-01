@@ -1,4 +1,4 @@
-/* Définition des polices personnalisées */
+/* Définition de la police personnalisée */
 
 @font-face {
     font-family: 'ralewayregular';
@@ -13,6 +13,8 @@ body {
     margin: auto;
 }
 
+/* Bloc page */
+
 #bloc_page {
     margin-left: 20%;
     margin-right: 20%;
@@ -20,9 +22,28 @@ body {
     font-family: 'ralewayregular', Helvetica, sans-serif;
 }
 
+@media all and (max-width: 880px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+}
+
+/* Définition des titres et paragraphes */
+
 h1 {
     font-size: larger;
     font-weight: bold;
+}
+
+@media all and (max-width: 880px)
+{
+	h1
+	{
+		font-size: medium;
+        font-weight: bold;
+	}
 }
 
 h2 {
@@ -30,9 +51,28 @@ h2 {
     font-weight: bold;
 }
 
+@media all and (max-width: 880px)
+{
+	h2
+	{
+		font-size: 15px;
+        font-weight: bold;
+	}
+}
+
 p {
     font-size: 15px;
 }
+
+@media all and (max-width: 880px)
+{
+	p
+	{
+		font-size: small;
+	}
+}
+
+/* Header */
 
 header {
     width: 100%;
@@ -46,6 +86,8 @@ header {
     top: 10px;
 }
 
+/* Menu de navigation */
+
 nav {
     position: absolute;
     display : flex;
@@ -57,6 +99,16 @@ nav {
     height: 40px;
     width: 350px;
     text-decoration: none;
+}
+
+@media all and (max-width: 880px)
+{
+	nav
+	{
+		flex-direction: column;
+        text-align: right;
+        padding-right: 4px;
+	}
 }
 
 .el1, .el2, .el3 {
@@ -84,6 +136,8 @@ nav {
     position: absolute;
     top: 110px;
 }
+
+/* Barre de recherche */
 
 .recherche {
     position: absolute;
@@ -124,6 +178,8 @@ nav {
     text-align: center;
 }
 
+/* Menu icones */
+
 #filtres {
     position: absolute;
     display: flex;
@@ -134,12 +190,20 @@ nav {
     font-size: 20px;
 }
 
+@media all and (max-width: 880px)
+{
+	#filtres
+	{
+		flex-direction: column;
+	}
+}
+
 h2 {
     flex: 1 1 auto;
     margin-right: 20px;
 }
 
-.economique {
+.economique, .familial, .romantique, .animaux {
     flex: 1 1 auto;
     border-radius: 30px;
     border: 3px solid #F2F2F2;
@@ -150,7 +214,7 @@ h2 {
     height: 48px;
 } 
 
-.money {
+.money, .child, .heart, .dog {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -160,128 +224,30 @@ h2 {
     vertical-align: middle;
 }
  
-.eco {
+.eco, .fam, .rom, .ani {
     flex: 1 1 auto;
     padding-left: 10px;
 }
 
-.eco a {
+.eco a, .fam a, .rom a, .ani a {
     color: black;
 }
 
-.eco a:hover {
+.eco a:hover, .fam a:hover, .rom a:hover, .ani a:hover {
     background-color: #0400fc;
     color: #F2F2F2;
     font-size: 30px;
 }
 
-.familial {
-    flex: 1 1 auto;
-    border-radius: 30px;
-    border: 3px solid #F2F2F2;
-    border-style: solid solid solid hidden;
-    border-top-left-radius: 35%;
-    display: flex;
-    margin-right: 20px;
-    height: 48px;
-} 
-
-.child {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #8caddd;
-    flex: 1 1 auto;
-    line-height: 50px;
-    vertical-align: middle;
+@media all and (max-width: 880px)
+{
+	a:hover 
+	{
+		font-size: 15px;
+	}
 }
 
-.fam {
-    flex: 1 1 auto;
-    padding-left: 10px;
-}
-
-.fam a {
-    color: black;
-}
-
-.fam a:hover {
-    background-color: #0400fc;
-    color: #F2F2F2;
-    font-size: 30px;
-}
-
-.romantique {
-    flex: 1 1 auto;
-    border-radius: 30px;
-    border: 3px solid #F2F2F2;
-    border-style: solid solid solid hidden;
-    border-top-left-radius: 35%;
-    display: flex;
-    margin-right: 20px;
-    height: 48px;
-} 
-
-.heart {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #8caddd;
-    flex: 1 1 auto;
-    line-height: 50px;
-    vertical-align: middle;
-}
-
-.rom {
-    flex: 1 1 auto;
-    padding-left: 10px;
-}
-
-.rom a {
-    color: black;
-}
-
-.rom a:hover {
-    background-color: #0400fc;
-    color: #F2F2F2;
-    font-size: 30px;
-}
-
-.animaux {
-    flex: 1 1 auto;
-    border-radius: 30px;
-    border: 3px solid #F2F2F2;
-    border-style: solid solid solid hidden;
-    border-top-left-radius: 35%;
-    display: flex;
-    margin-right: 20px;
-    height: 48px;
-} 
-
-.dog {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #8caddd;
-    flex: 1 1 auto;
-    line-height: 50px;
-    vertical-align: middle;
-}
-
-.ani {
-    flex: 1 1 auto;
-    padding-left: 10px;
-}
-
-.ani a {
-    color: black;
-}
-
-.ani a:hover {
-    background-color: #0400fc;
-    color: #F2F2F2;
-    font-size: 30px;
-}
+/* Information */
 
 .info {
     display: flex;
@@ -311,14 +277,26 @@ h2 {
     margin: auto;
 }
 
-section {
+/* Section */
+
+#section {
     top: 0px;
     width: 100%;
     height: 480px;
     display: flex;
 }
 
-articles {
+@media all and (max-width: 880px)
+{
+	#section
+	{
+		flex-direction: column;
+	}
+}
+
+/* Hebergements */
+
+.articles {
     position: relative;
     top: 0px;
     height: 440px;
@@ -404,11 +382,12 @@ articles {
     padding-left: 7px;
 }
 
-articles h2 {
+.articles .plus {
     position: absolute;
     top: 416px;
 }
 
+/* Les plus populaires */
 
 aside {
     top: 0px;
@@ -520,11 +499,21 @@ aside .etoiles {
     top: 414px;
 }
 
+/* Activités */
+
 #activites {
     position: relative;
     top: 40px;
     height: 390px;
     width: 100%;
+}
+
+@media all and (max-width: 880px)
+{
+	#activites
+	{
+		flex-direction: column;
+	}
 }
 
 .blocactiv {
@@ -578,6 +567,8 @@ aside .etoiles {
     padding-bottom: 20px;
 }
 
+/* Footer */
+
 footer {
    background-color: #F2F2F2;
    font-family: 'ralewayregular', Helvetica, sans-serif;
@@ -585,6 +576,15 @@ footer {
    margin-right: 17%;
    margin-left: 17%;
    display:flex;
+}
+
+@media all and (max-width: 880px)
+{
+	footer
+	{
+		width: auto;
+        flex-direction: column;
+	}
 }
 
 footer h2 {
